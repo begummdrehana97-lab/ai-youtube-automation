@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI YouTube Automation</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 24px;
-      font-family: Arial, sans-serif;
-      background: #f3f5f9;
-      color: #202938;
-    }
-    .container {
-      max-width: 700px;
-      margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-    }
-    h1 { color: #176b45; }
-    .card {
-      padding: 16px;
-      margin: 15px 0;
-      background: #edf7f1;
-      border-radius: 10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI YouTube Automation</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #172033;
+}
+.container {
+  max-width: 750px;
+  margin: auto;
+}
+header {
+  background: #176b45;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+}
+.card {
+  background: white;
+  padding: 22px;
+  margin-top: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0001;
+}
+h2 {
+  color: #176b45;
+}
+button {
+  background: #176b45;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.status {
+  color: #176b45;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <h1>AI YouTube Automation</h1>
-    <p>Your automated YouTube content dashboard.</p>
+<div class="container">
 
-    <div class="card">
-      <h2>Daily Shorts</h2>
-      <p>Target: 1 video per day</p>
-      <p>Status: Not connected</p>
-    </div>
+<header>
+<h1>AI YouTube Automation</h1>
+<p>Your automated YouTube content dashboard</p>
+</header>
 
-    <div class="card">
-      <h2>Daily Long Video</h2>
-      <p>Target: 1 video per day</p>
-      <p>Status: Not connected</p>
-    </div>
+<div class="card">
+<h2>Daily Shorts</h2>
+<p>Daily target: 1 YouTube Short</p>
+<p class="status">Status: Not connected</p>
+</div>
 
-    <div class="card">
-      <h2>Automation Settings</h2>
-      <p>AI topic research, script, voiceover, video creation and upload.</p>
-      <p>Upload will require secure YouTube authorization.</p>
-    </div>
-  </div>
+<div class="card">
+<h2>Long Videos</h2>
+<p>Daily target: 1 Long Video</p>
+<p class="status">Status: Not connected</p>
+</div>
+
+<div class="card">
+<h2>AI Content Generator</h2>
+<p>Generate original video ideas and scripts.</p>
+<button onclick="alert('AI Generator will be connected later.')">
+Generate Content
+</button>
+</div>
+
+<div class="card">
+<h2>YouTube Channel</h2>
+<p>Channel connection: Not connected</p>
+<button onclick="alert('YouTube connection will be added later.')">
+Connect YouTube
+</button>
+</div>
+
+</div>
 </body>
 </html>
